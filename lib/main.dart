@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:smart_synclab/login/login_page_view.dart';
+import 'package:smart_synclab/view/login/login_page_view.dart';
 
 void main() {
   runApp(const MyApp());
