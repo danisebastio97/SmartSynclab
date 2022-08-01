@@ -21,3 +21,4 @@ const deepBlue = Color.fromARGB(255, 1, 77, 129);
 const orange = Color.fromARGB(255, 255,156,0);
 const disableGray = Color.fromARGB(255, 220, 220, 220);
 const disableDarkGray = Color.fromARGB(255, 150, 150, 150);
+const cardFeatureColor = Color.fromARGB(255, 183, 202, 216);

@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:smart_synclab/commons/global/colors.dart';
 import 'package:smart_synclab/commons/global/strings.dart';
 import 'package:smart_synclab/commons/widgets/global/password_text_field.dart';
 
-import '../global/email_text_field.dart';
+import '../global/underlined_text_field.dart';
 
-class TextFieldContainer extends StatelessWidget {
-  const TextFieldContainer({Key? key}) : super(key: key);
+class LoginTextFieldContainer extends StatelessWidget {
+  const LoginTextFieldContainer({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const EmailTextField(),
+        const UnderlinedTextField(label: email, hintColor: smoke),
         const SizedBox(height: 24),
         const PasswordTextField(),
         Container(

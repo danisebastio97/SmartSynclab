@@ -12,12 +12,7 @@ class Logo extends StatelessWidget {
     return Column(children: [
       getSvgPicture("assets/logo.svg"),
       const SizedBox(height: 24),
-      (title != null)
-          ? Text(
-              title!,
-              style: const TextStyle(color: grey, fontSize: 17),
-            )
-          : Container()
+      (title != null) ? Text(title!, style: const TextStyle(color: grey, fontSize: 17)) : Container()
     ]);
   }
 }

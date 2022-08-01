@@ -4,7 +4,8 @@ import 'package:smart_synclab/commons/global/strings.dart';
 import '../../global/colors.dart';
 
 class HomeAppBar extends AppBar {
-  HomeAppBar({Key? key}) : super(key: key);
+  HomeAppBar({Key? key, required this.onProfileClicked}) : super(key: key);
+  final Function() onProfileClicked;
 
   @override
   State<HomeAppBar> createState() => _HomeAppBarState();
@@ -24,7 +25,9 @@ class _HomeAppBarState extends State<HomeAppBar> {
             highlightColor: transparent,
             icon: const Icon(Icons.notifications, color: darkBlue)),
         IconButton(
-            onPressed: () {},
+            onPressed: () {
+              widget.onProfileClicked();
+            },
             splashColor: transparent,
             highlightColor: transparent,
             icon: const Icon(Icons.account_circle, color: darkBlue))
