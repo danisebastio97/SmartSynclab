@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:smart_synclab/commons/global/colors.dart';
 import 'package:smart_synclab/commons/global/strings.dart';
-import 'package:smart_synclab/commons/widgets/global/button.dart';
+import 'package:smart_synclab/commons/widgets/global/custom_button.dart';
 import 'package:smart_synclab/commons/widgets/login/login_text_field_container.dart';
 import 'package:smart_synclab/view/home/home_view.dart';
 
 import '../../commons/global/global.dart';
 import '../../commons/widgets/global/logo.dart';
 
-class LoginPageView extends StatefulWidget {
-  const LoginPageView({Key? key}) : super(key: key);
+class LoginView extends StatefulWidget {
+  const LoginView({Key? key}) : super(key: key);
 
   @override
-  State<LoginPageView> createState() => _LoginPageViewState();
+  State<LoginView> createState() => _LoginViewState();
 }
 
-class _LoginPageViewState extends State<LoginPageView> {
+class _LoginViewState extends State<LoginView> {
   @override
   Widget build(BuildContext context) {
     width = MediaQuery.of(context).size.width;
@@ -28,7 +28,7 @@ class _LoginPageViewState extends State<LoginPageView> {
                 children: [
                   const Logo(title: welcome),
                   const LoginTextFieldContainer(),
-                  Button(
+                  CustomButton(
                     buttonColor: blue,
                     buttonText: login,
                     onPress: () {

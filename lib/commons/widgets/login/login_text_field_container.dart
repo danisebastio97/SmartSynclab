@@ -18,7 +18,11 @@ class LoginTextFieldContainer extends StatelessWidget {
         Container(
             alignment: Alignment.centerRight,
             child: TextButton(
-                onPressed: () {}, child: const Text(forgottenPassword)))
+                onPressed: () {},
+                child: const Text(
+                  forgottenPassword,
+                  style: TextStyle(color: blue),
+                )))
       ],
     );
   }

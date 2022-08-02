@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:smart_synclab/commons/widgets/home/home_app_bar.dart';
-import 'package:smart_synclab/view/attendance/attendance.dart';
-import 'package:smart_synclab/view/profile/profile.dart';
+import 'package:smart_synclab/view/attendance/attendance_view.dart';
+import 'package:smart_synclab/view/profile/profile_view.dart';
 
 import '../../commons/widgets/home/selection_feature_list.dart';
 
@@ -30,12 +31,12 @@ class _HomeViewState extends State<HomeView> {
 
   onCardFeatureClicked() {
     Navigator.push(
-        context, MaterialPageRoute(builder: (context) => const Attendance()));
+        context, MaterialPageRoute(builder: (context) => const AttendanceView()));
   }
 
   onProfileClicked() {
     Navigator.push(
-        context, MaterialPageRoute(builder: (context) => const Profile()));
+        context, MaterialPageRoute(builder: (context) => const ProfileView()));
   }
 
 }

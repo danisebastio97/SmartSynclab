@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:smart_synclab/view/login/login_page_view.dart';
+import 'package:flutter/services.dart';
+import 'package:smart_synclab/commons/global/colors.dart';
+import 'package:smart_synclab/view/login/login_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,9 +12,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(
+        const SystemUiOverlayStyle(statusBarColor: blue));
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginPageView(),
+      home: LoginView(),
     );
   }
 }

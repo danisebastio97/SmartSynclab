@@ -6,14 +6,14 @@ import 'package:smart_synclab/commons/widgets/profile/profile_outlined_button.da
 
 import '../../commons/widgets/profile/profile_text_field_container.dart';
 
-class Profile extends StatefulWidget {
-  const Profile({Key? key}) : super(key: key);
+class ProfileView extends StatefulWidget {
+  const ProfileView({Key? key}) : super(key: key);
 
   @override
-  State<Profile> createState() => _ProfileState();
+  State<ProfileView> createState() => _ProfileViewState();
 }
 
-class _ProfileState extends State<Profile> {
+class _ProfileViewState extends State<ProfileView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

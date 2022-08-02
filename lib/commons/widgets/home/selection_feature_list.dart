@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:smart_synclab/commons/global/utils/disable_scroll_glow_behavior.dart';
 
 import 'card_feature.dart';
 
 class SelectionFeatureList extends StatefulWidget {
-  const SelectionFeatureList({Key? key, required this.onCardFeatureClicked}) : super(key: key);
+  const SelectionFeatureList({Key? key, required this.onCardFeatureClicked})
+      : super(key: key);
   final Function() onCardFeatureClicked;
 
   @override
@@ -15,14 +17,18 @@ class _SelectionFeatureListState extends State<SelectionFeatureList> {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-        itemCount: listFeatures.length,
-        itemBuilder: (BuildContext context, int position) {
-          return getRow(position);
-        });
+    return ScrollConfiguration(
+        behavior: DisableScrollGlowBehavior(),
+        child: ListView.builder(
+            itemCount: listFeatures.length,
+            itemBuilder: (BuildContext context, int position) {
+              return getRow(position);
+            }));
   }
 
   CardFeature getRow(int i) {
-    return CardFeature(listFeatures: listFeatures, onCardFeatureClicked: widget.onCardFeatureClicked);
+    return CardFeature(
+        listFeatures: listFeatures,
+        onCardFeatureClicked: widget.onCardFeatureClicked);
   }
 }

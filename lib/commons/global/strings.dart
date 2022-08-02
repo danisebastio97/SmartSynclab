@@ -18,3 +18,6 @@ const String dayPlaceHolder = "Il giorno:";
 const String hourPlaceHolder = "Alle ore:";
 const String entrance = "Ingresso";
 const String leaving = "Uscita";
+const String save = "Salva";
+const String summary = "Riepilogo";
+const String totalHours = "Totale ore";

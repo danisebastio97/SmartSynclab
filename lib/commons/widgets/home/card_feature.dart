@@ -21,7 +21,7 @@ class _CardFeatureState extends State<CardFeature> {
         child: Card(
             elevation: 3,
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(14),
+              borderRadius: BorderRadius.circular(14)
             ),
             child: Container(
                 alignment: Alignment.topLeft,

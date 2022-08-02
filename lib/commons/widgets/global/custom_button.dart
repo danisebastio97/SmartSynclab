@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:smart_synclab/commons/global/colors.dart';
 
-class Button extends StatefulWidget {
-  const Button(
+class CustomButton extends StatefulWidget {
+  const CustomButton(
       {Key? key,
       required this.buttonColor,
       required this.buttonText,
@@ -13,10 +13,10 @@ class Button extends StatefulWidget {
   final void Function()? onPress;
 
   @override
-  State<Button> createState() => _ButtonState();
+  State<CustomButton> createState() => _CustomButtonState();
 }
 
-class _ButtonState extends State<Button> {
+class _CustomButtonState extends State<CustomButton> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
